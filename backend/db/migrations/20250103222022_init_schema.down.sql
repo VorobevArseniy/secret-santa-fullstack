@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS "player_card";
+DROP TABLE IF EXISTS "session";
+DROP TABLE IF EXISTS "account";
