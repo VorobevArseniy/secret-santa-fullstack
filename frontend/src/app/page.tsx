@@ -1,6 +1,8 @@
 import SessionCard from "@/components/SessionCard";
 
-export default function Home() {
+const sessionID = "";
+
+const Home = async () => {
 	return (
 		<main className="w-full h-screen flex flex-col bg-orange-50 justify-center items-center">
 			<SessionCard
@@ -12,4 +14,6 @@ export default function Home() {
 			/>
 		</main>
 	);
-}
+};
+
+export default Home;
