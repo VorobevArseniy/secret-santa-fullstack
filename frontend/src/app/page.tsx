@@ -1,27 +1,15 @@
-import GameCard from "@/components/GameCard";
+import SessionCard from "@/components/SessionCard";
 
-// const fetchSessions = async (sessionId: string): Promise<unknown> => {
-// 	const response = await fetch(`http://localhost/session`, {
-// 		method: "GET",
-// 		headers: { id: sessionId },
-// 	});
-// 	const result = await response.json();
-// 	return result;
-// };
-const Home = async () => {
-	// const sessions = await fetchSessions("id").then(res => res);
-
+export default function Home() {
 	return (
-		<main className="w-full h-screen bg-slate-100 flex justify-center items-center ">
-			<GameCard
-				id="asdfasdf"
-				name="Name1"
+		<main className="w-full h-screen flex flex-col bg-orange-50 justify-center items-center">
+			<SessionCard
+				id="id"
+				name="name"
 				pic="pic"
+				playerCount={12}
 				isAdmin={true}
-				playerCount={3}
 			/>
 		</main>
 	);
-};
-
-export default Home;
+}
